@@ -7,7 +7,7 @@ import 'locator.dart';
 class BaseModel extends ChangeNotifier {
   //final Authentication _authenticationService = locator<Authentication>();
   final ProgressService _dialogService = locator<ProgressService>();
-  late ProgressResponse response;
+  ProgressResponse response;
  // Data get currentUser => _authenticationService.currentUser;
 
   bool _busy = false;

@@ -8,7 +8,7 @@ import 'dialogModels.dart';
 
 class ProgressManager extends StatefulWidget {
   final Widget child;
-  ProgressManager(Widget widget, {Key key, this.child}) : super(key: key);
+  ProgressManager({Key key, this.child}) : super(key: key);
 
   _ProgressManagerState createState() => _ProgressManagerState();
 }

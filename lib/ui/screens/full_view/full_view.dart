@@ -7,16 +7,16 @@ import 'package:stacked/stacked.dart';
 
 class FullView extends StatefulWidget {
   final String imageUrl;
-  FullView({required this.imageUrl});
+  FullView({ this.imageUrl});
 
   @override
   _FullViewState createState() => _FullViewState();
 }
 
 class _FullViewState extends State<FullView> {
-  late double ht;
-  late double wt;
-  late double margin;
+   double ht;
+   double wt;
+   double margin;
 
   @override
   Widget build(BuildContext context) {

@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  late int count;
+  int count;
   ScrollController _scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {

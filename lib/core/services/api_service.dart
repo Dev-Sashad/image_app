@@ -7,7 +7,7 @@ import 'index.dart';
 
 class ImageApiService {
 
-late ImageModel _imageModel;
+ImageModel _imageModel;
 ImageModel get imageModel => _imageModel;
 
   getImages() async {
