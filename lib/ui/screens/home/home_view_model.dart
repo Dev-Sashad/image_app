@@ -10,6 +10,7 @@ class HomeViewModel extends BaseModel {
   final ImageApiService _imageApiService = locator<ImageApiService>();
   final NavigationService _navigationService = locator<NavigationService>();
 
+  
   //List<Data> _images ;
   List<Data> get images => _imageApiService.imageModel.data;
 

@@ -61,6 +61,17 @@ class _FullViewState extends State<FullView> {
                   child: ClipRRect(
                     child: CachedNetworkImage(
                       imageUrl: widget.imageUrl,
+                      placeholder: (context, url) => Container(
+                                  color: Colors.black12,
+                                  child: Center(
+                                      child: CircularProgressIndicator(
+                                    strokeWidth: 2.0,
+                                    valueColor:
+                                        AlwaysStoppedAnimation(Colors.blue),
+                                  )),
+                                ),
+                      // memCacheHeight: 400,
+                      // memCacheWidth: 400,
                       height: ht,
                       width: wt,
                       fit: BoxFit.fill,
